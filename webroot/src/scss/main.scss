@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'Minion_Pro_Italic';
+    src: url("../fonts/Minion/MinionProItalic.ttf") format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Minion_Pro_Normal';
+    src: url("../fonts/Minion/MinionProRegular.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,600,700,800,900&subset=latin-ext');
+
+// Do not remove those imports
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+@import "_variables-custom";
+
+@import "modules/mixins";
+
+// add all other imports below
+@import "partials/_animations";
+@import "partials/_carousel";
+@import "partials/_navigation";
+@import "partials/_forms";
+@import "partials/_space-helper";
+@import "partials/_footer";
+@import "general";
+@import "configure";
+
+//If something is used several times. Here you can override.
+@import "partials/_overrides";

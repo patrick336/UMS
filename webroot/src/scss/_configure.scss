@@ -1,0 +1,12 @@
+// Configure colours
+$color-theme: (
+    "brand-primary": $brand-primary,
+    "brand-gray": #e8e8e8,
+    "brand-darkgray": #2e2e2d
+);
+@each $key, $value in $color-theme {
+
+    .bg-#{$key} {
+        background-color: $value !important;
+    }
+}

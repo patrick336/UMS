@@ -1,0 +1,120 @@
+//
+//forms
+//
+
+form {
+    .form-group {
+        margin-bottom: 10px;
+    }
+
+    label {
+        font-size: 14px;
+        font-weight: 700;
+        color: $gray-dark;
+    }
+
+    .spacer-label {
+        height: 27px;
+        @media (max-width: $screen-sm) {
+            display: none;
+        }
+    }
+
+    .form-control {
+        height: 40px;
+        margin-top: 0;
+        font-size: 14px;
+        font-weight: 400;
+        border: 1px solid $white-dark;
+        outline: 0;
+        box-shadow: none;
+        border-radius: 0;
+        transition: $transition-time;
+        color: $text-color;
+        border-radius: 0;
+
+        &::placeholder {
+            color: $gray-lighter;
+            font-weight: 400;
+        }
+
+        &:focus {
+            border-color: $gray-lighter;
+            box-shadow: none;
+            outline: none;
+        }
+    }
+
+    select.form-control{
+        appearance: none;
+        background-image: url("../img/arrowDown.svg");
+        background-size: 12px;
+        background-position: calc(100% - 15px);
+        background-repeat: no-repeat;
+        &::-ms-expand {
+            display: none;
+        }
+    }
+
+    textarea.form-control {
+        height: 117px;
+        resize: vertical;
+    }
+
+    .btn-form {
+        height: 40px;
+    }
+
+    .btn-send {
+        &:hover {}
+    }
+    // .checkbox {
+    //     font-size: 12px;
+    //
+    //     input {
+    //         margin-top: 3px;
+    //     }
+    // }
+}
+
+.custom-select {
+    min-width: 50px;
+    padding: 4px 35px 4px 7px;
+    outline: none;
+    border: 1px solid $white-dark;
+    appearance: none;
+    background-image: url("../img/arrowDown.svg");
+    background-size: 10px;
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+    &::-ms-expand {
+        display: none;
+    }
+}
+
+input[type='radio'],input[type='checkbox'] {
+    &:focus,&:hover,&:active { outline: none; }
+}
+
+.form-pagination-change {
+    label {
+        margin-right: 10px;
+        font-weight: normal;
+    }
+}
+
+.form-order-change {
+    margin-right: 10px;
+    label {
+        margin-right: 10px;
+        font-weight: normal;
+    }
+}
+
+.form-cart-add {
+    .calc-input {
+        .form-group {
+            margin-bottom: 0;
+        }
+    }
+}

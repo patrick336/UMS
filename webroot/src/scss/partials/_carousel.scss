@@ -1,0 +1,353 @@
+.main-banner-m {
+    margin-bottom: 100px;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 220px;
+    }
+}
+.main-banner {
+
+    position: relative;
+    .item {
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &.subpage {
+        margin-bottom: 0px;
+
+        .item {
+            img {
+                max-height: 510px;
+                overflow: hidden;
+            }
+        }
+        .slick-dots {
+            display: none !important;
+        }
+
+        .carousel-left, .carousel-right {
+            top: 24%;
+        }
+    }
+
+    .carousel-left {
+
+        position: absolute;
+        top: 16%;
+        left: 15px;
+        z-index: 200;
+
+        @media screen and (max-width: 575px) {
+            display: none;
+        }
+        @media screen and (min-width: 1200px) {
+            left: -65px;
+        }
+        @media screen and (min-width: 1400px) {
+            left: -75px;
+        }
+        @media screen and (min-width: 1650px) {
+            left: -90px;
+        }
+
+        img {
+            max-width: 80px;
+            max-height: 80px;
+            @media screen and (min-width: 768px) {
+                max-height: 100px;
+                max-width: 100px;
+            }
+            @media screen and (min-width: 992px) {
+                max-height: 150px;
+                max-width: 150px;
+            }
+            @media screen and (min-width: 1200px) {
+                max-height: 175px;
+                max-width: 175px;
+            }
+            @media screen and (min-width: 1650px) {
+                max-height: 200px;
+                max-width: 200px;
+            }
+        }
+    }
+    .carousel-right {
+        position: absolute;
+        z-index: 200;
+        right: 15px;
+        bottom: 0;
+
+        @media screen and (min-width: 576px) {
+            bottom: auto;
+            top: 16%;
+        }
+        @media screen and (min-width: 1200px) {
+            right: -65px;
+        }
+        @media screen and (min-width: 1400px) {
+            right: -75px;
+            min-width: 470px;
+        }
+        @media screen and (min-width: 1650px) {
+            right: -90px;
+            min-width: 560px;
+        }
+    }
+
+    .carousel-header {
+        color: #fff;
+        font-size: 22px;
+        line-height: 1.2;
+        font-weight: 600;
+
+        padding: 15px 30px;
+
+        @media screen and (max-width: 575px) {
+            display: none;
+        }
+        @media screen and (min-width: 768px) {
+            font-size: 24px;
+        }
+        @media screen and (min-width: 992px) {
+            font-size: 28px;
+            padding: 25px 45px;
+        }
+        @media screen and (min-width: 1200px) {
+            font-size: 32px;
+            padding: 25px 55px;
+        }
+        @media screen and (min-width: 1400px) {
+            font-size: 36px;
+            padding: 55px 60px;
+        }
+
+        img {
+            max-width: 185px;
+
+            @media screen and (min-width: 768px) {
+                max-width: 215px;
+            }
+            @media screen and (min-width: 992px) {
+                max-width: 245px;
+            }
+        }
+    }
+
+    .slick-dots {
+        position: absolute;
+        display: flex;
+        bottom: -74px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        @media screen and (min-width: 1200px) {
+            display: block;
+        }
+
+        @media screen and (min-width: 1200px) {
+            text-align: right;
+            left: auto;
+            right: -65px;
+            bottom: 0;
+            transform: none;
+        }
+
+        li {
+            margin: 0 3px;
+            height: 45px;
+            min-width: 45px;
+            position: relative;
+            cursor: pointer;
+
+            transition: .4s;
+            font-size: 16px;
+
+            &:not(.slick-active) {
+
+                &:hover, &:focus, &:active {
+                    button {
+                        color: $brand-primary;
+                    }
+                }
+            }
+        }
+
+        .slick-active {
+            font-size: 24px;
+
+            button {
+                color: $black !important;
+            }
+        }
+        button {
+            cursor: pointer;
+            position: absolute;
+            background: transparent;
+            color: $black;
+            outline: none;
+            border: 0;
+            padding: 0;
+            transition: .4s;
+
+            right: 50%;
+            bottom: 50%;
+            transform: translate(50%, 50%);
+
+
+            @media screen and (min-width: 1200px) {
+                right: 0;
+                bottom: 0;
+                transform: none;
+            }
+        }
+    }
+}
+.get-in-touch {
+
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 11px;
+    display: flex;
+
+    @media screen and (min-width: 768px) {
+        font-size: 12px;
+        padding: 23px 20px;
+    }
+    @media screen and (min-width: 992px) {
+        font-size: 14px;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 16px;
+    }
+
+    li {
+        margin: 0;
+        padding: 10px;
+        position: relative;
+        flex-grow: 1;
+
+        border-right: 2px solid #fff;
+
+        &:last-of-type {
+            border-right: 0;
+        }
+
+        @media screen and (min-width: 1400px) {
+            display: block;
+            width: 50%;
+            flex-grow: 1;
+            padding: 15px 10px;
+        }
+    }
+    a {
+        color: #fff;
+        position: relative;
+
+        &:before {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            width: 0;
+            height: 1px;
+            display: block;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #fff;
+            transition: .3s ease-in-out;
+        }
+
+        &:hover, &:focus, &:active {
+            &:before {
+                width: 100%;
+            }
+        }
+    }
+}
+.our-offert {
+    margin-top: 100px;
+    padding: 40px 0;
+    @include background($color:$brand-primary, $position: center, $size: cover, $repeat: no-repeat);
+
+    @media screen and (min-width: 768px) {
+        margin-top: 200px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 330px;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding: 90px 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding: 140px 0px;
+    }
+
+    .header {
+        display: block;
+        color: $black;
+        text-align: center;
+        font-size: 24px;
+        line-height: 28px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+}
+.our-offert-carousel {
+
+    max-width: 1340px;
+    margin: 0 auto;
+
+    @media screen and (min-width: 576px) {
+        width: 90%;
+    }
+
+    @media screen and (min-width: 1400px) {
+        width: 85%;
+    }
+
+    .offert-item {
+        border: 1px solid #fff;
+        background-color: rgba(#fff, .9);
+        padding: 20px 30px;
+        @media screen and (min-width: 576px) {
+            padding: 35px 30px;
+        }
+        @media screen and (min-width: 1200px) {
+            padding: 55px 45px;
+        }
+    }
+    .slick-track {
+        margin: 0 auto;
+    }
+    .slick-list {
+        margin: 0 -15px;
+
+        @media screen and (min-width: 1650px) {
+            margin: 0 -35px;
+        }
+    }
+    .slick-slide {
+        margin: 0 15px;
+        @media screen and (min-width: 1650px) {
+            margin: 0 35px;
+        }
+    }
+    p {
+        text-align: justify;
+        margin: 0;
+        font-size: 14px;
+
+        @media screen and (min-width: 768px) {
+            font-size: 16px;
+        }
+    }
+}

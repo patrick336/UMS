@@ -1,0 +1,154 @@
+//Wordpress overrides
+.page-template-gallery {
+
+    .gallery {
+        margin: 0 -15px;
+        padding-top: 50px;
+
+        @media screen and (min-width: 768px) {
+            padding-top: 80px;
+        }
+    }
+    .gallery-item {
+        padding: 0 15px;
+
+        img {
+            display: block;
+            height: auto;
+            max-width: 100%;
+            border: 0 !important;
+        }
+    }
+}
+
+.page-template-gallery {
+    .main {
+        padding: 0 0 40px;
+
+        @media screen and (min-width: 768px) {
+            padding-bottom: 80px;
+        }
+        @media screen and (min-width: 992px) {
+            padding-bottom: 120px;
+        }
+        @media screen and (min-width: 1200px) {
+            padding-bottom: 180px;
+        }
+        @media screen and (min-width: 1400px) {
+            padding-bottom: 280px;
+        }
+        .right-side {
+
+            padding-top: 30px;
+            padding-bottom: 30px;
+
+            @media screen and (min-width: 768px) {
+                padding-top: 60px;
+                padding-bottom: 60px;
+            }
+
+            @media screen and (min-width: 1200px) {
+                padding-top: 120px;
+                padding-bottom: 120px;
+            }
+        }
+    }
+    .main-banner {
+        margin-bottom: 40px;
+    }
+}
+.page-template-contact {
+    pre {
+        margin-top: 20px;
+    }
+    .main {
+        padding: 20px 0 0;
+    }
+
+    .bottom-form {
+        position: relative;
+
+        > p { display: none;}
+
+        .ajax-loader {
+            position: absolute;
+            right: 94px;
+            bottom: 25px;
+            @media screen and (min-width: 992px) {
+                bottom: 31px;
+            }
+        }
+    }
+}
+.page-template-services-technology {
+    .left-side {
+        p {
+            line-height: 1.8;
+        }
+    }
+}
+
+//swipebox
+a#swipebox-next, a#swipebox-prev {
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: 17px 32px;
+}
+#swipebox-prev {
+    background-image: url(http://usmiechnijmisie.ecdev.pl/wp-content/themes/ums/webroot/img/arrow-left.png) !important;
+}
+#swipebox-next {
+    background-image: url(http://usmiechnijmisie.ecdev.pl/wp-content/themes/ums/webroot/img/arrow-right.png) !important;
+}
+#swipebox-overlay {
+
+    #swipebox-close {
+        background: transparent !important;
+        height: 55px;
+        width: 55px;
+        border-radius: 100%;
+        border: 1px solid $brand-primary !important;
+        overflow: hidden;
+        top: 20px;
+        right: 20px;
+
+        @media screen and (min-width: 800px) {
+            right: 40px;
+            top: 20px;
+        }
+
+        &:before, &:after {
+            content: '';
+            position: absolute;
+            display: block;
+            height: 1px;
+            background-color: $brand-primary;
+            transform-origin: center;
+            width: 39px;
+        }
+
+        &:before {
+            left: 8px;
+            top: 26px;
+            transform: rotate(45deg);
+        }
+
+        &:after {
+            top: 26px;
+            right: 7px;
+            transform: rotate(-45deg);
+        }
+    }
+}
+.page-template-prices {
+    .main {
+        padding: 45px 0 80px;
+
+        @media screen and (min-width: 1200px) {
+            padding: 45px 0 125px;
+        }
+        @media screen and (min-width: 1650px) {
+            padding: 45px 0 185px;
+        }
+    }
+}

@@ -1,0 +1,1 @@
+Original images before compression goes here.

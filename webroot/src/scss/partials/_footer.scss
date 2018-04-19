@@ -1,0 +1,88 @@
+.footer {
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+
+    .row-footer {
+        justify-content: center;
+        padding: 50px 0 45px;
+
+        @media screen and (min-width: 768px) {
+            padding: 85px 0 80px;
+        }
+        @media (min-width: 1650px) {
+            padding: 100px 0 95px;
+        }
+    }
+
+    a {
+        color: #fff;
+        &:hover, &:focus, &:active {
+            color: $brand-primary;
+        }
+    }
+    .contact-wrapper {
+        @media screen and (min-width: 768px) {
+            min-width: 720px;
+        }
+        @media (min-width: 1200px) {
+            min-width: 470px;
+        }
+    }
+    .contact-header {
+        background-color: $brand-primary;
+        padding: 35px 10px;
+        margin-bottom: 35px;
+
+        @media screen and (min-width: 768px) {
+            padding: 65px 20px;
+        }
+        @media screen and (min-width: 1200px) {
+            margin-right: -80px;
+        }
+        @media screen and (min-width: 1400px) {
+            margin-right: -90px;
+        }
+        @media screen and (min-width: 1650px) {
+            padding: 90px 30px;
+            margin-right: -105px;
+            margin-bottom: 90px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 16px;
+            margin: 0;
+
+            @media screen and (min-width: 768px) {
+                font-size: 18px;
+            }
+            @media screen and (min-width: 1200px) {
+                font-size: 20px;
+            }
+        }
+    }
+
+}
+
+.contact-box {
+    text-align: center;
+
+    @media screen and (max-width: 575px) {
+        padding: 20px 0;
+
+        border-bottom: 1px solid #fff;
+        &:last-of-type {
+            border-bottom: 0;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
+
+    a {
+        display: block;
+        margin-top: 25px;
+    }
+}
